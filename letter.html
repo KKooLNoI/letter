@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>จดหมายให้กำลังใจแฟน</title>
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #fffafc;
+      text-align: center;
+      padding: 50px;
+    }
+    .envelope {
+      width: 300px;
+      height: 200px;
+      margin: 0 auto;
+      background: #B2EBF2
+      ;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .envelope:hover {
+      transform: scale(1.05);
+    }
+    .letter {
+      display: none;
+      margin-top: 30px;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #B2EBF2
+      ;
+      font-size: 18px;
+      color: #333;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #B2EBF2
+      ;
+    }
+    .open-text {
+      color: white;
+      font-size: 22px;
+      line-height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📨 จดหมายถึงเบบี๋ 💌</h1>
+
+  <div class="envelope" onclick="openLetter()">
+    <div class="open-text">คลิกเพื่อเปิดจดหมาย</div>
+  </div>
+
+  <div class="letter" id="letter">
+    <div class="title">เบบี๋เพน 🩵</div>
+    <p>
+      สู้ๆนะคะเบบี๋ 🩵 วันนี้เหนื่อยก็พักนะค้าบ พักเยอะๆจะได้ไม่ปวดหัวค้าบ <br>
+      เดี๋ยววันนี้พาไปกินของอร่อยๆนะคับ ซื้อขนมด้วย <br>
+      วันนี้น่ารักมากๆค้าบ รักเบบี๋นะคะ คนสวย 🩵🩵🩵 
+    </p>
+  </div>
+
+  <script>
+    function openLetter() {
+      document.getElementById("letter").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
